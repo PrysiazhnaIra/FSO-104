@@ -4,39 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chocolate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href=""
+    <header class="header">
+      <nav class="header-navigation">
+        <a class="header-logo" href=""
           >SIMPLY CHOCOLATE
-          <img src="./images/chocolate-icon.svg" alt="chocolate-icon"
+          <img
+            class="header-logo-img"
+            src="./images/chocolate-icon.svg"
+            alt="chocolate-icon"
         /></a>
-        <ul>
-          <li>
-            <a href="">Home</a>
+        <ul class="header-menu-list">
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="">Home</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="">How it’s made?</a>
           </li>
           <li>
-            <a href="">How it’s made?</a>
-          </li>
-          <li>
-            <a href="">Chocolate is loved</a>
+            <a class="header-menu-link" href="">Chocolate is loved</a>
           </li>
         </ul>
       </nav>
-      <ul>
-        <li>
-          <a href="" target="_blank" rel="noopener noreferrer"
+      <ul class="header-menu-list">
+        <li class="header-menu-item">
+          <a
+            class="header-menu-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
             ><img src="./images/inst.svg" alt="instagram"
           /></a>
         </li>
-        <li>
-          <a href="" target="_blank" rel="noopener noreferrer"
+        <li class="header-menu-item">
+          <a
+            class="header-menu-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
             ><img src="./images/facebook.svg" alt="facebook"
           /></a>
         </li>
         <li>
-          <a href="" target="_blank" rel="noopener noreferrer"
+          <a
+            class="header-menu-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
             ><img src="./images/twit.svg" alt="twitter"
           /></a>
         </li>
@@ -44,7 +70,7 @@
     </header>
     <main>
       <section>
-        <h1>
+        <h1 style="font-size: 44px; color: tomato">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
