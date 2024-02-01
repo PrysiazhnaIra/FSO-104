@@ -99,20 +99,15 @@ a {
 
 .header-navigation {
   display: flex;
+  align-items: center;
   flex-grow: 1;
   margin-right: 90px;
-  align-items: center;
   justify-content: space-between;
 }
 
 .header-menu-list {
   display: flex;
   gap: 24px;
-}
-
-.header-soc-list {
-  display: flex;
-  gap: 14px;
 }
 
 .header-menu-link {
@@ -129,14 +124,33 @@ a {
   color: #fd9222;
 }
 
+.header-soc-list {
+  display: flex;
+  gap: 14px;
+}
+
+.header-soc-icon {
+  fill: transparent;
+  stroke: #111111;
+}
+
 /* hero */
 .hero {
   padding-bottom: 80px;
 }
 
 .hero-container {
-  border-radius: 30px;
   background-color: rgba(17, 17, 17, 0.6);
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../images/hero_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
   padding: 380px 40px 40px 40px;
 }
 
@@ -265,8 +279,6 @@ a {
 
 .taste-subtitle {
   color: #fff;
-
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.29;
@@ -293,7 +305,7 @@ a {
 .made-image {
 }
 
-.made.content {
+.made-content {
   padding: 32px;
   background-color: #ffffff;
 }
@@ -311,6 +323,20 @@ a {
 
 .made-item {
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.made-item::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #4c4c4c;
+  border-radius: 50%;
+  border: 1px solid #eceded;
+  display: block;
+  flex-shrink: 0;
 }
 
 .made-item:last-child {
@@ -420,8 +446,7 @@ a {
   color: rgba(17, 17, 17, 0.7);
   text-align: center;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.02em;
 }
 
@@ -449,7 +474,7 @@ a {
   color: #fd9222;
 }
 
-.footer .footer-subtitle {
+.footer-subtitle {
   color: #fff;
   text-align: center;
   font-size: 14px;
@@ -481,7 +506,7 @@ a {
   text-align: center;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.02em;
 }
 
