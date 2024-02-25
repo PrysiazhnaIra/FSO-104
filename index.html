@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo" href=""
@@ -77,20 +77,85 @@
             ></a>
           </li>
         </ul>
+        <button type="button" class="menu-open-btn">
+          <svg width="28" height="28">
+            <use href="./images/icons.svg#icon-icon-menu-btn"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <!-- for mob menu add "is-open" to class -->
+      <div class="mob-menu">
+        <div>
+          <button type="button" class="modal-close-btn">
+            <svg class="modal-close-icon" width="28" height="28">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Home</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">How it’s made?</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Chocolate is loved</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="mob-soc-list">
+            <li class="mob-soc-item">
+              <a
+                class="mob-soc-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                class="mob-soc-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                class="mob-soc-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twit"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <!-- hero -->
       <section class="hero">
-        <div class="container hero-container">
-          <h1 class="hero-title">
-            Treat yourself or a loved one to our finest ingredients for a moment
-            of pure delight!
-          </h1>
-          <div class="hero-buttons">
-            <button type="button" class="hero-btn">Buy now</button>
-            <a href="" class="hero-made-link">How it’s made</a>
-            <a href="" class="hero-scroll-link">scroll down</a>
+        <div class="container">
+          <div class="hero-container">
+            <h1 class="hero-title">
+              Treat yourself or a loved one to our finest ingredients for a
+              moment of pure delight!
+            </h1>
+            <div class="hero-buttons">
+              <button type="button" class="hero-btn">Buy now</button>
+              <a href="" class="hero-made-link">How it’s made</a>
+              <a href="" class="hero-scroll-link">scroll down</a>
+            </div>
           </div>
         </div>
       </section>
@@ -146,6 +211,10 @@
             <li class="taste-item">
               <img
                 class="taste-picture"
+                srcset="
+                  ./images/chocolate-mob-tab.png    1x,
+                  ./images/chocolate-mob-tab-2x.png 2x
+                "
                 src="./images/chocolate-min.png"
                 alt="chocolate"
                 width="214"
@@ -156,6 +225,10 @@
             <li class="taste-item">
               <img
                 class="taste-picture"
+                srcset="
+                  ./images/milk-mob-tab.png    1x,
+                  ./images/milk-mob-tab-2x.png 2x
+                "
                 src="./images/milk-min.png"
                 alt="milk"
                 width="214"
@@ -166,6 +239,10 @@
             <li class="taste-item">
               <img
                 class="taste-picture"
+                srcset="
+                  ./images/nuts-mob-tab.png    1x,
+                  ./images/nuts-mob-tab-2x.png 2x
+                "
                 src="./images/nuts-min.png"
                 alt="nuts"
                 width="214"
@@ -176,6 +253,10 @@
             <li class="taste-item">
               <img
                 class="taste-picture"
+                srcset="
+                  ./images/coffee-mob-tab.png    1x,
+                  ./images/coffee-mob-tab-2x.png 2x
+                "
                 src="./images/coffee-min.png"
                 alt="sweet"
                 width="214"
@@ -186,6 +267,10 @@
             <li class="taste-item">
               <img
                 class="taste-picture"
+                srcset="
+                  ./images/cacao-mob-tab.png    1x,
+                  ./images/cacao-mob-tab-2x.png 2x
+                "
                 src="./images/cacao-min.png"
                 alt="cacao"
                 width="214"
@@ -196,6 +281,10 @@
             <li class="taste-item">
               <img
                 class="taste-picture"
+                srcset="
+                  ./images/struwberry-mob-tab.png    1x,
+                  ./images/struwberry-mob-tab-2x.png 2x
+                "
                 src="./images/struwberry-min.png"
                 alt="raspberry"
                 width="214"
@@ -206,6 +295,10 @@
             <li class="taste-item">
               <img
                 class="taste-picture"
+                srcset="
+                  ./images/coconut-mob-tab.png    1x,
+                  ./images/coconut-mob-tab-2x.png 2x
+                "
                 src="./images/coconut-min.png"
                 alt="coconut"
                 width="214"
@@ -221,12 +314,34 @@
         <div class="container">
           <h2 class="made-title title">hOW IT’S <span>made?</span></h2>
           <div class="made-wrapper">
+            <picture>
+              <source
+                media="(min-width: 1166px)"
+                srcset="
+                  ./images/chocolate_made.jpeg   1x,
+                  ./images/chocolate_made-2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./images/chocolate_made-tab.jpg    1x,
+                  ./images/chocolate_made-tab-2x.jpg 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/chocolate_made-mob.jpg    1x,
+                  ./images/chocolate_made-mob-2x.jpg 2x
+                "
+              />
+            </picture>
             <img
               class="made-image"
-              src="./images/chocolate_made.jpeg"
+              src="./images/chocolate_made-tab.jpg"
               alt="preparating"
-              width="600"
-              height="400"
+              width="614"
             />
             <div class="made-content">
               <h3 class="made-subtitle">
@@ -277,6 +392,7 @@
             <li class="products-item">
               <img
                 class="products-picture"
+                srcset="./images/img-1.jpeg 1x, ./images/img-1-2x.png 2x"
                 src="./images/img-1.jpeg"
                 alt="dark"
                 width="230"
@@ -289,6 +405,7 @@
             <li class="products-item">
               <img
                 class="products-picture"
+                srcset="./images/img-2.jpeg 1x, ./images/img-2-2x.png 2x"
                 src="./images/img-2.jpeg"
                 alt="APPLE"
                 width="230"
@@ -301,6 +418,7 @@
             <li class="products-item">
               <img
                 class="products-picture"
+                srcset="./images/img-3.jpeg 1x, ./images/img-3-2x.png 2x"
                 src="./images/img-3.jpeg"
                 alt=""
                 width="230"
@@ -313,6 +431,7 @@
             <li class="products-item">
               <img
                 class="products-picture"
+                srcset="./images/img-4.jpeg 1x, ./images/img-4-2x.png 2x"
                 src="./images/img-4.jpeg"
                 alt="Dark"
                 width="230"
@@ -325,6 +444,7 @@
             <li class="products-item">
               <img
                 class="products-picture"
+                srcset="./images/img-5.jpeg 1x, ./images/img-5-2x.png 2x"
                 src="./images/img-5.jpeg"
                 alt="Milk"
                 width="230"
@@ -337,6 +457,7 @@
             <li class="products-item">
               <img
                 class="products-picture"
+                srcset="./images/img-6.jpeg 1x, ./images/img-6-2x.png 2x"
                 src="./images/img-6.jpeg"
                 alt="Milk"
                 width="230"
@@ -349,6 +470,7 @@
             <li class="products-item">
               <img
                 class="products-picture"
+                srcset="./images/img-7.jpeg 1x, ./images/img-7-2x.png 2x"
                 src="./images/img-7.jpeg"
                 alt="Dark"
                 width="230"
@@ -361,6 +483,7 @@
             <li class="products-item">
               <img
                 class="products-picture"
+                srcset="./images/img-8.jpeg 1x, ./images/img-8-2x.png 2x"
                 src="./images/img-8.jpeg"
                 alt="White"
                 width="230"
@@ -382,6 +505,10 @@
               <div class="sellers-cover-wrap">
                 <img
                   class="sallers-picture"
+                  srcset="
+                    ./images/img-1(1)(1).jpg    1x,
+                    ./images/img-1(1)(1)-2x.jpg 2x
+                  "
                   src="./images/img-1(1)(1).jpg"
                   alt="NUTS"
                   width="368"
@@ -401,6 +528,10 @@
             <li class="sellers-item">
               <img
                 class="sallers-picture"
+                srcset="
+                  ./images/img-2(1)(1).jpg     1x,
+                  ./images/img-2(1)(1)-2x.jpeg 2x
+                "
                 src="./images/img-2(1)(1).jpg"
                 alt="FRUITS"
                 width="368"
@@ -411,6 +542,10 @@
             <li class="sellers-item">
               <img
                 class="sallers-picture"
+                srcset="
+                  ./images/img-3(1)(1).jpg     1x,
+                  ./images/img-3(1)(1)-2x.jpeg 2x
+                "
                 src="./images/img-3(1)(1).jpg"
                 alt="DARK"
                 width="368"
@@ -429,6 +564,7 @@
             <li class="loved-item">
               <img
                 class="loved-picture"
+                srcset="./images/Ellipse1.png 1x, ./images/Ellipse1-2x.png 2x"
                 src="./images/Ellipse1.png"
                 alt="Dobrzhanska"
               />
@@ -441,6 +577,7 @@
             <li class="loved-item">
               <img
                 class="loved-picture"
+                srcset="./images/Ellipse2.png 1x, ./images/Ellipse2-2x.png 2x"
                 src="./images/Ellipse2.png"
                 alt="Babenko"
               />
@@ -454,6 +591,7 @@
             <li class="loved-item">
               <img
                 class="loved-picture"
+                srcset="./images/Ellipse3.png 1x, ./images/Ellipse3-2x.png 2x"
                 src="./images/Ellipse3.png"
                 alt="Kampusch"
               />
@@ -551,7 +689,11 @@
     <!-- modal form -->
     <!-- <div class="backdrop">
       <div class="modal">
-        <button type="button" class="modal-close">X</button>
+            <button type="button" class="modal-close-btn">
+          <svg class="modal-close-icon" width="24" height="24 ">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
         <p class="modal-title title">
           LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
         </p>

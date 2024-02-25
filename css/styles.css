@@ -87,7 +87,7 @@ img {
 
 .header-logo {
   color: #111;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: -0.03em;
@@ -103,12 +103,12 @@ img {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  margin-right: 90px;
+  /* margin-right: 90px; */
   justify-content: space-between;
 }
 
 .header-menu-list {
-  display: flex;
+  display: none;
   gap: 24px;
 }
 
@@ -127,13 +127,88 @@ img {
 }
 
 .header-soc-list {
-  display: flex;
+  display: none;
   gap: 14px;
 }
 
 .header-soc-icon {
   fill: transparent;
   stroke: #111111;
+}
+
+/* menu btn */
+
+.menu-open-btn {
+  padding: 0;
+  line-height: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  stroke: #111111;
+}
+
+/* mob-menu */
+
+.mob-menu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1e1823;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.modal-close-btn {
+  background-color: transparent;
+  border: none;
+  fill: #ffffff;
+  margin-left: auto;
+  display: block;
+  margin-bottom: 88px;
+}
+.modal-close-icon {
+}
+.mob-menu-list {
+  margin-bottom: 60px;
+  padding-left: 28px;
+}
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mob-menu-link {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-link:hover {
+  color: #fd9222;
+}
+
+.mob-menu-link:focus {
+  color: #fd9222;
+}
+
+.mob-soc-list {
+  display: flex;
+  gap: 12px;
+}
+.mob-soc-item {
+}
+.mob-soc-link {
+}
+.mob-soc-icon {
+  fill: transparent;
+  stroke: #ffffff;
 }
 
 /* hero */
@@ -969,6 +1044,19 @@ img {
     font-size: 28px;
   }
 
+  .menu-open-btn {
+    display: none;
+  }
+
+  .header-menu-list,
+  .header-soc-list {
+    display: flex;
+  }
+
+  .header-navigation {
+    margin-right: 48px;
+  }
+
   .title {
     font-size: 24px;
     line-height: 1.17;
@@ -1012,6 +1100,10 @@ img {
     width: calc((100% - 16px) / 2);
   }
 
+  /* .sallers-picture {
+    background-size: "344";
+  } */
+
   .loved {
     padding-top: 50px;
     padding-bottom: 100px;
@@ -1047,6 +1139,12 @@ img {
 
   .made > .container {
     width: 1166px;
+  }
+  .header-navigation {
+    margin-right: 90px;
+  }
+  .header-logo {
+    font-size: 18px;
   }
 
   .hero-container {
@@ -1113,6 +1211,10 @@ img {
   .sellers-item {
     width: calc((100% - 32px) / 3);
   }
+
+  /* .sallers-picture {
+    background-size: "368";
+  } */
 
   .loved {
     padding-top: 60px;
