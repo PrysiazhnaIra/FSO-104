@@ -76,6 +76,14 @@ img {
 /* header */
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fafafa;;
+  color: #fff;
+  text-align: center;
+  z-index: 1000; /* Ensure it's above other elements */
+
   padding-top: 24px;
   padding-bottom: 32px;
 }
@@ -940,6 +948,7 @@ img {
 }
 
 .is-open {
+  z-index: 1001;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
