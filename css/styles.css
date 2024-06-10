@@ -1036,7 +1036,7 @@ border: 1px solid #000000;
   outline: transparent;
   padding-left: 62px;
   font-size: 16px;
-  color: green;
+  color: black;
   transition-duration: 300ms;
 }
 
@@ -1077,7 +1077,7 @@ border: 1px solid #000000;
   outline: transparent;
   padding: 22px 24px;
   font-size: 16px;
-  color: green;
+  color: black;
   transition-duration: 300ms;
   resize: none;
 }
