@@ -1,1 +1,2 @@
-# FSO-104
+# Welcome to Chocolate
+## Discover the power and elegance of Chocolate-project through our carefully designed interface. We've included screenshots below to give you a glimpse of the features and functionalities that make our page both interesting and useful. See for yourself the high-quality experience that awaits you!
