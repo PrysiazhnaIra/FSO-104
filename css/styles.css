@@ -75,7 +75,7 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #fafafa;;
+  background-color: #fafafa;
   color: #fff;
   text-align: center;
   z-index: 1000; /* Ensure it's above other elements */
@@ -176,7 +176,7 @@ img {
   margin-bottom: 88px;
 }
 .modal-close-icon {
-fill: #1e1823;
+  fill: white;
 }
 
 .mob-menu-list {
@@ -728,11 +728,11 @@ fill: #1e1823;
   flex-direction: column;
   padding: 50px;
   border-radius: 8px;
-  background-color: #FFF;
+  background-color: #fff;
   max-width: 500px;
 }
 
-.feedback-close-btn{
+.feedback-close-btn {
   width: 40px;
   height: 40px;
   display: flex;
@@ -741,8 +741,8 @@ fill: #1e1823;
   margin: 0 auto;
 }
 
-.feedback-form label{
-  color: #2E2F42;
+.feedback-form label {
+  color: #2e2f42;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -755,34 +755,33 @@ fill: #1e1823;
   margin-top: 8px;
 }
 
-
 .feedback-form label:first-child {
   margin-top: 0;
 }
 
-.feedback-form input{
-border-radius: 4px;
-border: 1px solid #808080;
-padding: 8px 16px;
-outline: transparent;
+.feedback-form input {
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 8px 16px;
+  outline: transparent;
 }
 
 .feedback-form input:hover,
 .feedback-form input:focus {
-border: 1px solid #000000;
+  border: 1px solid #000000;
 }
 
-.feedback-form textarea{
+.feedback-form textarea {
   padding: 8px 16px;
   border-radius: 4px;
   border: 1px solid #808080;
   margin-bottom: 16px;
-  outline: transparent;  
+  outline: transparent;
 }
 
 .feedback-form textarea:hover,
 .feedback-form textarea:focus {
-border: 1px solid #000000;
+  border: 1px solid #000000;
 }
 
 .feedback-form button {
@@ -805,7 +804,7 @@ border: 1px solid #000000;
 .feedback-form button:focus {
   background-color: transparent;
   border: 1px solid #fd9222;
-  color:#000000;
+  color: #000000;
 }
 
 /* footer */
