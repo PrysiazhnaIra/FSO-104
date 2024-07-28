@@ -176,6 +176,17 @@ img {
   margin-bottom: 88px;
 }
 .modal-close-icon {
+  fill: black;
+}
+.mobil-close-btn {
+  background-color: transparent;
+  border: none;
+  fill: #white;
+  margin-left: auto;
+  display: block;
+  margin-bottom: 88px;
+}
+.mobil-close-icon {
   fill: white;
 }
 
